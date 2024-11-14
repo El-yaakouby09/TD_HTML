@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div class="container">
+    <h1>Inscription en Lingne</h1>
+    <fieldset><legend>Information personneils</legend>
+    <form action="/submit" method="post">
+        <label for="#">
+            Prenom:
+            <input class="prenom" type="text">
+        </label>
+    </form>
+    <br>
+        <form action="#">
+        <label for="#">
+            Nom:
+            <input  type="text">
+        </label>
+    </form>
+        <br>
+        <form action="#">
+        <label for="#">
+            Datr de maission:
+            <input type="date">
+        </label>
+    </form>
+        
+        <br>
+        <form action="#">
+        <label for="#">
+            Email:
+            <input type="email" id="email" name="email">
+        </label>
+    </form>
+        
+        <br>
+        <form action="#">
+        <label for="#">
+            URL de votre site web:
+            <input type="url" id="url" name="url">
+        </label>
+    </form>
+        
+        <br>
+        <form action="#">
+        <label for="#">
+            Mot de passe:
+            <input type="password" id="password" name="password">
+        </label>
+    </form>
+            <br>
+            <label>Sexe:
+                <br><input type="radio"  id="Homme" name="Homme" value="Homme">
+        <label for="Homme">Homme</label>
+        <br>
+        <input type="radio" id="Femme" name="Femme" value="Femme">
+        <label for="Femme">
+            Femme
+        </label>
+    </label>
+    <form action="#">
+        <label for="pays">choisir un pays:
+    <select name="pays" id="pays">
+        <option value="Afrique">Afrique</option>
+        <option value="Amerique">Amerique</option>
+        <option value="Europe">Europe</option>
+    </label>
+    </form>
+    </select>
+</fieldset>
+<fieldset><legend>Loisair</legend>
+    <form action="/submit" method="post">
+        <input type="checkbox">
+        <label for="#">
+          sport
+        </label>
+    </form>
+    <form action="/submit" method="post">
+        <input type="checkbox">
+        <label for="#">
+        Musique
+        </label>
+    </form>
+    <form action="/submit" method="post">
+        <input type="checkbox">
+        <label for="#">.container
+        voiyage
+        </label>
+    </form>
+    <form action="/submit" method="post">
+    </h3>commentes sur vos loisairs<h3>
+    </form>
+    <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+    <br>
+</fieldset>
+<fieldset><legend>Fichaiers et informations supplementaires</legend>
+    <form action="/submit" method="post">
+        <label for="#">Envoyer un fichier: <input type="file" name="fichier" accept="png"></label>
+    </form>
+</fieldset>
+<input type="submit" value="S'inscrire">
+</div>
+</body>
+</html>

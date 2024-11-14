@@ -1,0 +1,51 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-image: url(/image/back.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 95%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.container .card{
+    position: absolute;
+    width: 250px;
+    top: 20px;
+    left: calc(50% - 50px);
+    transform-style:preserve-3d;
+    transform: perspective(1000px);
+    animation: Rouan_auto 10s linear infinite;
+    transition: 2s;
+}
+@keyframes Rouan_auto{
+  to{
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    transition: 0.2s;
+}
+  from{
+    transform: perspective(1000px) rotateX(0deg) rotateY(360deg);
+    transition: 0.2s;
+  }
+}
+.card .tem{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc(( var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(558px);
+   
+}
+.container .card img{
+  height: 200px;
+  width: 200px;
+}
+.card .tem .ronaldinho,.mbappe,.joao{
+    border-radius: 70px;
+}
